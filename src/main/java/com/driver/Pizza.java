@@ -58,7 +58,8 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        bill = "Base Price Of The Pizza: " + (isVeg ? "300" : "400") + "\n";
+        bill = "";
+        bill += "Base Price Of The Pizza: " + (isVeg ? "300" : "400") + "\n";
 
         if(isExtraCheeseAdded) {
             bill += "Extra Cheese Added: 80" + "\n";
