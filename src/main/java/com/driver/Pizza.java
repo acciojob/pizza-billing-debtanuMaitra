@@ -5,10 +5,10 @@ public class Pizza {
     private int price;
     private Boolean isVeg;
     private String bill;
-    private Boolean isExtraCheeseAdded = false;
+    private boolean isExtraCheeseAdded;
     private int total = 0;
-    private Boolean isExtraToppingsAdded = false;
-    private Boolean isTakeawayAdded = false;
+    private boolean isExtraToppingsAdded;
+    private boolean isTakeawayAdded;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -27,6 +27,7 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
+
         if(!isExtraCheeseAdded) {
             total += 80;
             isExtraCheeseAdded = true;
